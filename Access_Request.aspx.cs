@@ -29,7 +29,7 @@ namespace Applied_project
                 cm.Parameters.AddWithValue("@request", abc);
                 cm.ExecuteNonQuery();
 
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Request for elevated access has approved');window.location.href='WebForm12.aspx';", true);
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Request for elevated access has approved');window.location.href='Access_Request.aspx';", true);
 
                 conec.Close();
             }
@@ -53,7 +53,7 @@ namespace Applied_project
                 cm.Parameters.AddWithValue("@request", abc);
                 cm.ExecuteNonQuery();
 
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Request for elevated access has declined');window.location.href='WebForm12.aspx';", true);
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Request for elevated access has declined');window.location.href='Access_Request.aspx';", true);
 
                 conec.Close();
             }
