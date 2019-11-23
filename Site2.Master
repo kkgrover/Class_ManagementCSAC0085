@@ -5,10 +5,14 @@
 <html>
 <head runat="server">
 <title>CLASS MANAGEMENT</title>
+
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
@@ -107,31 +111,42 @@ input,date[type=text] {
 
 </style>
 </head>
-<body>
-    <p style="float: right">
+<body> 
+    <div class="container-fluid">
+    <p style="float:right;font-size:larger; width: 65px; margin-left: 45px;">
             <a href="../Login.aspx" style="float: right; color:blue">Logout</a></p>
 <header>
-    
+    <div class="row">
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </div>
 </header>
 
 <section>
+    <div class="row">
+         
   <nav>   
       <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-          <p>
-              MENU</p>
+          
       </asp:ContentPlaceHolder>
   </nav>
   
+        <div class="col-sm-4 col-md-4 col-lg-16" >
   <article>    
     <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server"></asp:ContentPlaceHolder>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server"></asp:ContentPlaceHolder>
    </article>
+            </div>
+        </div>
 </section>
 
 <footer>
    
 </footer>
+     <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+        </div>
 </body>
 </html>
